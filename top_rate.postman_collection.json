@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "af9c12de-116c-4ca8-a6b8-25c8ed947139",
+		"name": "top_rate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insert data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/insert?fromDate=2022-08-10&toDate=2022-08-20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insert"
+					],
+					"query": [
+						{
+							"key": "fromDate",
+							"value": "2022-08-10"
+						},
+						{
+							"key": "toDate",
+							"value": "2022-08-20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get min, max",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get?date=2022-08-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2022-08-10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

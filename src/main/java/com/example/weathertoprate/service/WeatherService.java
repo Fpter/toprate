@@ -2,8 +2,10 @@ package com.example.weathertoprate.service;
 
 import com.example.weathertoprate.entity.WeatherEntity;
 
+import java.text.ParseException;
+
 public interface WeatherService {
-    WeatherEntity save(WeatherEntity entity);
+    void insertData(String fromDate, String toDate) throws ParseException;
 
     WeatherEntity getMin(String date);
 
